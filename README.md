@@ -2,6 +2,7 @@
 
 ## Step 1: Download Windows Terminal
 - Install Windows Terminal from the Microsoft Store or download it from the [official GitHub repo](https://github.com/microsoft/terminal).
+- Download Powershell from [official GitHub repo](https://github.com/PowerShell/PowerShell/releases/).
 
 ## Step 2: Update Settings in `settings.json`
 1. Open Windows Terminal.
