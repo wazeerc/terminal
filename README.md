@@ -35,5 +35,6 @@ New-Item -Path $PROFILE -Type File -Force
 ```
 notepad $PROFILE
 ```
-4. Paste the contents of [Microsoft.PowerShell_profile.ps1](https://github.com/wazeerc/terminal/blob/main/Microsoft.PowerShell_profile.ps1) into the profile file.
-5. Save and close 👏
+4. Download and save the [mnml theme](https://github.com/wazeerc/terminal/blob/main/mnml.omp.json).
+5. Paste the contents of [Microsoft.PowerShell_profile.ps1](https://github.com/wazeerc/terminal/blob/main/Microsoft.PowerShell_profile.ps1) into the profile file (you might need to update the path of theme downloaded in Step 4).
+6. Save and close 👏
