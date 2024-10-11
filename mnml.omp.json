@@ -17,10 +17,10 @@
           "foreground": "#3EC669",
           "leading_diamond": "\ue0b6",
           "properties": {
-            "style": "folder"
+            "style": "mixed"
           },
           "style": "diamond",
-          "template": "\ue5fe {{ .Path }}",
+          "template": "📂 {{ .Path  }}",
           "trailing_diamond": "\ue0b4",
           "type": "path"
         },
@@ -29,14 +29,13 @@
           "foreground": "#43CCEA",
           "leading_diamond": " \ue0b6",
           "properties": {
-            "branch_icon": "\ue725 ",
-            "github_icon": "",
+            "branch_icon": "\uf408 ",
             "fetch_status": true
           },
           "style": "diamond",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}",
-          "trailing_diamond": "\ue0b4",
-          "type": "git"
+          "type": "git",
+          "trailing_diamond": "\ue0b4"
         },
         {
           "background": "#29315A",
@@ -85,6 +84,19 @@
           "template": "\ue738{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
           "trailing_diamond": "\ue0b4",
           "type": "java"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#AEA4BF",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "style": "austin",
+            "threshold": 250
+          },
+          "style": "diamond",
+          "template": "{{ .FormattedMs }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "executiontime"
         }
       ],
       "type": "prompt"
@@ -93,19 +105,6 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-        {
-          "background": "#29315A",
-          "foreground": "#AEA4BF",
-          "leading_diamond": "\ue0b6",
-          "properties": {
-            "style": "austin",
-            "threshold": 150
-          },
-          "style": "diamond",
-          "template": "{{ .FormattedMs }}",
-          "trailing_diamond": "\ue0b4",
-          "type": "executiontime"
-        },
         {
           "leading_diamond": "\ue0b6",
           "style": "plain",
@@ -117,6 +116,7 @@
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{.UserName}} @ {{.HostName}} : {{.Folder}}",
   "final_space": true,
   "version": 2
 }
