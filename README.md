@@ -10,7 +10,7 @@
 3. Paste the contents of [settings.json](https://github.com/wazeerc/terminal/blob/main/settings.json) into the `settings.json` file.
 
 ## Step 3: Download Nerd Fonts
-- Download the [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) from the [Nerd Fonts GitHub repo](https://github.com/ryanoasis/nerd-fonts).
+- Download the FiraCode Nerd Font Mono Retina from the [Nerd Fonts GitHub repo](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
 - Install the font on your system.
 
 ## Step 4: Download and Install Winget
