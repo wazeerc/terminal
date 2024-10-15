@@ -7,3 +7,15 @@ Set-PSReadLineOption -PredictionSource History
 
 # Terminal Icons
 Import-Module -Name Terminal-Icons
+
+# Aliases:
+## Create new Excalidraw in current directory
+function New-File {
+  param(
+    [string]$FileName
+  )
+  $Path = Join-Path -Path (Get-Location) -ChildPath ("$FileName.excalidraw")
+  New-Item -ItemType File -Path  $Path
+}
+
+Set-Alias -Name excalidraw -Value New-File
