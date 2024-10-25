@@ -60,6 +60,7 @@
                 "backgroundImageStretchMode": "fill",
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -nologo",
                 "cursorShape": "bar",
+                "bellStyle": "none",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
