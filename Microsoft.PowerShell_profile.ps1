@@ -19,3 +19,9 @@ function New-File {
 }
 
 Set-Alias -Name excalidraw -Value New-File
+
+## Delete a folder
+function deldir {
+    param ($path)
+    rmdir -Path $path -Recurse -Force
+}
