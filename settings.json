@@ -27,6 +27,10 @@
         {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "toggleFocusMode",
+            "keys": "vk(20)"
         }
     ],
     "alwaysShowTabs": true,
