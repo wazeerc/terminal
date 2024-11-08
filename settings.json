@@ -30,7 +30,8 @@
         },
         {
             "command": "toggleFocusMode",
-            "keys": "vk(20)"
+            "id": "User.toggleFocusMode",
+            "keys": "ctrl+1"
         }
     ],
     "alwaysShowTabs": true,
