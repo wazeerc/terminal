@@ -25,3 +25,6 @@ function deldir {
     param ($path)
     rmdir -Path $path -Recurse -Force
 }
+
+## Grep Alternative for Windows
+Set-Alias find findstr
