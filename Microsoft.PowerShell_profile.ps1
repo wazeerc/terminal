@@ -61,3 +61,12 @@ function git-rebase-main {
     if (Test-GitRepository) { git rebase main }
 }
 Set-Alias -Name grm -Value git-rebase-main
+
+### Create a new branch from main and switch to it
+function new-branch {
+    param (
+        [string]$branchName
+    )
+    if (Test-GitRepository) { git checkout -b $branchName main }
+}
+Set-Alias -Name nb -Value new-branch
