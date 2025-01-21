@@ -26,7 +26,7 @@ function deldir {
     rmdir -Path $path -Recurse -Force
 }
 
-## Grep Alternative for Windows
+## Grep Alternative on Windows
 Set-Alias find findstr
 
 ## Git Aliases
@@ -70,3 +70,9 @@ function new-branch {
     if (Test-GitRepository) { git checkout -b $branchName main }
 }
 Set-Alias -Name nb -Value new-branch
+
+### Update local main branch
+function git-rebase-main {
+    if (Test-GitRepository) { git pull origin main }
+}
+Set-Alias -Name gpom -Value git-rebase-main
