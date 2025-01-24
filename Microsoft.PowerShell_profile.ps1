@@ -54,7 +54,7 @@ Set-Alias -Name gs -Value git-status
 function git-log5 {
     if (Test-GitRepository) { git log -n 5 --oneline }
 }
-Set-Alias -Name g5 -Value git-log5
+Set-Alias -Name gl5 -Value git-log5
 
 ### Git rebase main
 function git-rebase-main {
@@ -72,7 +72,7 @@ function new-branch {
 Set-Alias -Name nb -Value new-branch
 
 ### Update local main branch
-function git-rebase-main {
+function git-pull-origin-main {
     if (Test-GitRepository) { git pull origin main }
 }
-Set-Alias -Name gpom -Value git-rebase-main
+Set-Alias -Name gpom -Value git-pull-origin-main
