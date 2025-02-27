@@ -51,10 +51,13 @@ function git-status {
 Set-Alias -Name gs -Value git-status
 
 ### Git show one line, five most recent commits
-function git-log5 {
-    if (Test-GitRepository) { git log -n 5 --oneline }
+function git-log-n {
+    param (
+        [int]$n
+    )
+    if (Test-GitRepository) { git log -n $n --oneline }
 }
-Set-Alias -Name gl5 -Value git-log5
+Set-Alias -Name gln -Value git-log-n
 
 ### Git rebase main
 function git-rebase-main {
