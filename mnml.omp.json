@@ -7,15 +7,6 @@
       "alignment": "right",
       "segments": [
         {
-          "style": "plain",
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": " \ue0b4 ",
-          "template": "{{ .UserName }} ",
-          "foreground": "#ED8796",
-          "background": "",
-          "type": "session"
-        },
-        {
           "properties": {
             "style": "mixed"
           },
